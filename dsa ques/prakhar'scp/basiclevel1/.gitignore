@@ -1,0 +1,65 @@
+# =====================
+# C++ / General
+# =====================
+
+# Swap & backup files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+*.un~
+
+# Backup copies created by editors
+*~
+*.cpp~
+*.h~
+
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.lai
+
+# Compiled static & shared libraries
+*.lib
+*.a
+*.la
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.elf
+
+# Debug files
+*.pdb
+*.idb
+*.dSYM/
+
+# Build directories
+/build/
+/bin/
+/Debug/
+/Release/
+
+# CMake files (optional, if using CMake)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE-specific
+.vscode/
+.idea/
+*.code-workspace
+*.xcodeproj/
+*.xcworkspace/
+*.sublime-project
+*.sublime-workspace
