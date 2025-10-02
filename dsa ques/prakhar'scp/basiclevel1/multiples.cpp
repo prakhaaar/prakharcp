@@ -3,7 +3,6 @@ using namespace std;
 
 /*Given two numbers A and B. Print "Multiples" if A is multiple of B or vice versa. Otherwise print "No Multiples".
  * */
-
 int main()
 {
  
