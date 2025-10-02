@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    double X,P;
+    cin>>X>>P;
+    
+    //org_price=100*p/x-100//
+    double x=100*P;
+    double y=100-X;
+    double org_price=x/y;
+    cout<<fixed<<setprecison(2)<<org_price<<'\n';
+}
