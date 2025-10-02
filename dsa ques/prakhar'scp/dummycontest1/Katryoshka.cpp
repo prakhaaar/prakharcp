@@ -10,3 +10,7 @@ int main() {
     cout << ans << "\n";
     return 0;
 }
+/*https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/F
+
+  basic math problem//
+*/
