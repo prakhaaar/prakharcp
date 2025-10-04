@@ -1,20 +1,31 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
+
 void solve() {
+    
     int n;
-    cin >> n;
+    cin>>n;
     string s;
-    cin >> s;
-    int n = s.size();
-    for(int i = 0; i < n - 1; ++i) {
-        for(int j = 0; j < n - i - 1; ++j) {
-            if(s[j] > s[j + 1]) {
-                swap(s[j], s[j + 1]);
-            }
+    cin >> s; 
+    int arr[26]={0};
+    for(char c:s)
+    {
+        if(c>='a'&&c<='z')
+        {
+            arr[c-'a']++;
         }
     }
-    cout << s << "\n";
+    for(int i=0;i<26;++i)
+    {
+        while(arr[i]>0)
+        {
+            cout<<char(i+'a');
+            arr[i]--;
+        }
+    }
+    cout<<'\n';
 }
+
 int main() {
     solve();
     return 0;
