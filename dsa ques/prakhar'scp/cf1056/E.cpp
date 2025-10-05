@@ -14,27 +14,25 @@ int main() {
   int tt;
   cin >> tt;
   while (tt--) {
-    int n, k;
-    cin >> n >> k;
-    k = n * n - k;
-    if (k == 1) {
-      cout << "NO" << '\n';
-      continue;
-    }
-    cout << "YES" << '\n';
-    for (int i = 0; i < n; i++) {
-      for (int j = 0; j < n; j++) {
-        if (k > 0) {
-          k -= 1;
-          if (i == 0 && j == 0) cout << 'R'; else
-          if (i == 0) cout << 'L';
-          else cout << 'U';
+    int n, m, k;
+    cin >> n >> m >> k;
+    set<int> s;
+    for (int i = 0; i < k; i++) {
+      int x, y;
+      cin >> x >> y;
+      if (n == 1) {
+        y = (y == 2 ? 2 : 1);
+      }
+      if (y > 1) {
+        auto it = s.find(y);
+        if (it != s.end()) {
+          s.erase(it);
         } else {
-          cout << 'D';
+          s.insert(y);
         }
       }
-      cout << '\n';
     }
+    cout << (s.empty() ? "Yuyu" : "Mimo") << '\n';
   }
   return 0;
 }
