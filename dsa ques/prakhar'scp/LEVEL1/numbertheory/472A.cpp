@@ -10,7 +10,7 @@ int main() {
     int n;
     cin>>n;
    //prove that if a+b=n where a and b are composite numbers;
-   (n%2==0)?cout<<8<<n-9<<"\n":cout<<9<<n-9<<"\n";
+   (n%2==0)?cout<<8<<" "<< n-8<<"\n":cout<<9<<" "<<n-9<<"\n";
 
     return 0;
 }
